@@ -1,4 +1,4 @@
-.App {
+.mainHead{
   text-align: center;
 }
 
@@ -6,6 +6,67 @@
   height: 40vmin;
   pointer-events: none;
 }
+
+#reactHead{
+  margin-top: -10vh;
+}
+
+.todoHolder{
+  width: 40vw;
+  height: 50vh;
+  padding: 30px;
+}
+
+.form-control{
+  width: 105%;
+  height: 6vh;
+}
+
+.list{
+  width: 103%;
+}
+
+.deleteButton{
+  height: 4vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  color:white;
+  background-color:red;
+
+}
+
+li{
+  list-style: none;
+  width: 100%;
+  margin: 10px;
+  background-color: rgb(95, 95, 95);
+  padding: 5px;
+  border-radius: 10px;
+  height: 6vh;
+}
+
+@media screen and (max-width:600px){
+  .todoHolder{
+    width: 100vw;
+  }
+
+  .form-control{
+    height: 4.5vh;
+  }
+
+  #reactHead{
+    margin-top: -3vh;
+  }
+
+  li{
+    margin-top: 2vh;
+  }
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -16,11 +77,6 @@
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
@@ -36,3 +92,5 @@
     transform: rotate(360deg);
   }
 }
+
+
